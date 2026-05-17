@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface-0 text-slate-100 font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #2d374f transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  *::-webkit-scrollbar-track { background: transparent; }
+  *::-webkit-scrollbar-thumb {
+    background: #2d374f;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-500 hover:bg-brand-600 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 justify-center;
+  }
+
+  .btn-secondary {
+    @apply bg-surface-3 hover:bg-surface-4 text-slate-200 font-medium px-4 py-2 rounded-lg transition-all duration-200 active:scale-95 flex items-center gap-2 justify-center;
+  }
+
+  .btn-danger {
+    @apply bg-red-600/20 hover:bg-red-600/30 text-red-400 hover:text-red-300 font-medium px-4 py-2 rounded-lg transition-all duration-200 active:scale-95 flex items-center gap-2 justify-center;
+  }
+
+  .card {
+    @apply bg-surface-1 border border-white/5 rounded-xl;
+  }
+
+  .input {
+    @apply w-full bg-surface-2 border border-white/10 rounded-lg px-4 py-2.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500/50 transition-all duration-200;
+  }
+
+  .badge-todo {
+    @apply bg-slate-700/60 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded-full;
+  }
+
+  .badge-in-progress {
+    @apply bg-amber-500/20 text-amber-300 text-xs font-medium px-2.5 py-0.5 rounded-full;
+  }
+
+  .badge-done {
+    @apply bg-emerald-500/20 text-emerald-300 text-xs font-medium px-2.5 py-0.5 rounded-full;
+  }
+
+  .badge-low {
+    @apply bg-slate-700/60 text-slate-400 text-xs font-medium px-2 py-0.5 rounded;
+  }
+
+  .badge-medium {
+    @apply bg-amber-500/20 text-amber-300 text-xs font-medium px-2 py-0.5 rounded;
+  }
+
+  .badge-high {
+    @apply bg-red-500/20 text-red-300 text-xs font-medium px-2 py-0.5 rounded;
+  }
+}
