@@ -4,7 +4,7 @@ A full-stack collaborative task management web application built with React, Nod
 
 ## 🚀 Live Demo
 
-> Add your live Railway URL here after deployment
+> https://team-task-manager-frontend-production-b740.up.railway.app
 
 ## ✨ Features
 
@@ -71,7 +71,7 @@ task-manager/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/task-manager.git
+git clone https://github.com/prudhvivemula18/Team-Task-Manager.git
 cd task-manager
 ```
 
